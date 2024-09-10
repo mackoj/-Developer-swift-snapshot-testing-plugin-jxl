@@ -14,8 +14,8 @@ let package = Package(
   products: [
     // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
-      name: "swift-snapshot-testing-plugin-jxl",
-      targets: ["swift-snapshot-testing-plugin-jxl"]
+      name: "JXLImageSerializer",
+      targets: ["JXLImageSerializer"]
     ),
   ],
   dependencies: [
@@ -26,15 +26,15 @@ let package = Package(
     // Targets are the basic building blocks of a package, defining a module or a test suite.
     // Targets can depend on other targets in this package and products from dependencies.
     .target(
-      name: "swift-snapshot-testing-plugin-jxl",
+      name: "JXLImageSerializer",
       dependencies: [
         .product(name: "ImageSerializationPlugin", package: "swift-snapshot-testing"),
         .product(name: "JxlCoder", package: "jxl-coder-swift"),
       ]
     ),
     .testTarget(
-      name: "swift-snapshot-testing-plugin-jxlTests",
-      dependencies: ["swift-snapshot-testing-plugin-jxl"]
+      name: "JXLImageSerializerTests",
+      dependencies: ["JXLImageSerializer"]
     ),
   ]
 )
