@@ -1,5 +1,5 @@
 {
-  "originHash" : "b32f128e6fd76d7bad85e25f035b4f25d75efb106c5bb487faef06a3c119a747",
+  "originHash" : "be920983d819d336e9a7492c04ca37e6703a41c31cc7cf3c33e1ccf5dcdb5ea8",
   "pins" : [
     {
       "identity" : "jxl-coder-swift",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mackoj/swift-snapshot-testing.git",
       "state" : {
-        "branch" : "54c11f6",
-        "revision" : "54c11f6eecc7fc61c71f265e807ead8ce7de379b"
+        "branch" : "b899f13",
+        "revision" : "b899f13e313ff42c9c3653e7994374debc069040"
       }
     },
     {

@@ -5,27 +5,26 @@ import PackageDescription
 
 let package = Package(
   name: "swift-snapshot-testing-plugin-jxl",
+  
+  // TODO: update this with more tested platforms
   platforms: [
     .iOS(.v13),
     .macOS(.v12),
-    .tvOS(.v13),
-    .watchOS(.v8),
   ],
+
   products: [
-    // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
       name: "JXLImageSerializer",
       targets: ["JXLImageSerializer"]
     ),
   ],
+
   dependencies: [
     .package(url: "https://github.com/awxkee/jxl-coder-swift.git", from: "1.7.3"),
-//    .package(path: "/Users/jeffreymacko/Developer/swift-snapshot-testing"),
-    .package(url: "https://github.com/mackoj/swift-snapshot-testing.git", revision: "54c11f6"),
+    .package(url: "https://github.com/mackoj/swift-snapshot-testing.git", revision: "b899f13"),
   ],
+
   targets: [
-    // Targets are the basic building blocks of a package, defining a module or a test suite.
-    // Targets can depend on other targets in this package and products from dependencies.
     .target(
       name: "JXLImageSerializer",
       dependencies: [
