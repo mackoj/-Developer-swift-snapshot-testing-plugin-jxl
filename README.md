@@ -9,7 +9,6 @@ The goal of this is to show how easy it is to build a plugin.
 - Add this project to dependencies inside your `Package.swift`  -> `.package(url: "https://github.com/mackoj/swift-snapshot-testing-plugin-jxl.git", revision: "0.0.2"),`.
 - Then add this to your test target `.product(name: "JXLImageSerializer", package: "swift-snapshot-testing-plugin-jxl"),`.
 - Then add this to the top of your test file `import JXLImageSerializer` and in the `setUp()` add this `SnapshotTesting.imageFormat = JXLImageSerializer.imageFormat`.
-- call the registration code "registerAllPlugins()" bellow the definition of the imageFormat this step is temporary soon it will be called automatically.
 
 ## TODO
 
