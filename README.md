@@ -41,5 +41,5 @@ To utilize the JXL image serializer in your tests, follow these steps:
 - [ ] use [libjxl](https://github.com/libjxl/libjxl) directly
 - [ ] make the API ready for Swift 6 and async/throwing functions
 - [ ] create a tests suite
-- [ ] add documentations
+- [x] add documentations
 - [ ] add tutorials
