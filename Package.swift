@@ -20,7 +20,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/awxkee/jxl-coder-swift.git", from: "1.7.3"),
-    .package(path: "../swift-snapshot-testing"),
+    .package(url: "https://github.com/mackoj/swift-snapshot-testing.git", revision: "1cb2b12"),
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
