@@ -14,3 +14,4 @@ The goal of this is to show how easy it is to build a plugin.
 
 - [ ] use [libjxl](https://github.com/libjxl/libjxl) instead of [JXLCoder]([url](https://github.com/awxkee/jxl-coder-swift.git)).
 - [ ] make the API ready for Swift 6 and async/throwing functions
+- [ ] create a tests suite
