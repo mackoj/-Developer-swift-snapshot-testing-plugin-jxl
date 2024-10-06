@@ -25,19 +25,25 @@ To utilize the JXL image serializer in your tests, follow these steps:
 
 3. **Import and Set Up**: In your test file, import the serializer and set the image format in the `setUp()` method:
 
-    ```swift
+```swift
     import JXLImageSerializer
 
     override class func setUp() {
         SnapshotTesting.imageFormat = JXLImageSerializer.imageFormat
     }
-    ```
+```
 
-4. **Per Assertion**: Alternatively, specify the image format for individual assertions: 
+> [!IMPORTANT]  
+> On non Apple platform use this instead.
 
-    ```swift
-    assertSnapshot(of: label, as: .image(precision: 0.9, format: .jxl))
-    ```
+```swift
+    import HEICImageSerializer
+
+    override class func setUp() {
+        SnapshotTesting.imageFormat = JXLImageSerializer.imageFormat
+        PluginRegistry.registerPlugin(JXLImageSerializer.init())
+    }
+```
 
 ## TODO
 
